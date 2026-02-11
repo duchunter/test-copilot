@@ -9,10 +9,7 @@ const Workouts = () => {
   const [showModal, setShowModal] = useState(false);
 
   const codespaceName = process.env.REACT_APP_CODESPACE_NAME;
-  const apiBaseUrl = codespaceName
-    ? `https://${codespaceName}-8000.app.github.dev`
-    : 'http://localhost:8000';
-  const endpoint = `${apiBaseUrl}/api/workouts/`;
+  const endpoint = `https://${codespaceName}-8000.app.github.dev/api/workouts/`;
 
   const columns = useMemo(
     () => (workouts[0] ? Object.keys(workouts[0]) : []),

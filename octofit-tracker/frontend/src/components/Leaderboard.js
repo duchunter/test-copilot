@@ -9,10 +9,7 @@ const Leaderboard = () => {
   const [showModal, setShowModal] = useState(false);
 
   const codespaceName = process.env.REACT_APP_CODESPACE_NAME;
-  const apiBaseUrl = codespaceName
-    ? `https://${codespaceName}-8000.app.github.dev`
-    : 'http://localhost:8000';
-  const endpoint = `${apiBaseUrl}/api/leaderboard/`;
+  const endpoint = `https://${codespaceName}-8000.app.github.dev/api/leaderboard/`;
 
   const columns = useMemo(
     () => (entries[0] ? Object.keys(entries[0]) : []),
