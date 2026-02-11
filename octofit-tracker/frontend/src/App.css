@@ -1,0 +1,32 @@
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2f7 100%);
+  color: #1f2937;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+.card {
+  border: 0;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+.modal pre {
+  white-space: pre-wrap;
+}
